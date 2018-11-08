@@ -11,33 +11,17 @@
   <%= javascript_include_tag "site" %>
 </head>
 <body>
-  <div class="hp_social_links">
-        <% link_to 'http://www.instagram.com' do %>
-          <%= image_tag 'insta_btn.svg', :width => '35', :height => '35', :class => 'insta_btn' %>
-        <% end %>
-        <% link_to 'http://www.twitter.com' do %>
-          <%= image_tag 'twit_btn.svg', :width => '35', :height => '35', :class => 'insta_btn' %>
-        <% end %>
-        <% link_to 'http://www.dribbble.com' do %>
-          <%= image_tag 'dribb_btn.svg', :width => '35', :height => '35', :class => 'insta_btn' %>
-        <% end %>
-        <% link_to 'http://www.behance.com' do %>
-          <%= image_tag 'behance_btn.svg', :width => '35', :height => '35', :class => 'insta_btn' %>
-        <% end %>
-        <% link_to 'http://www.github.com' do %>
-          <%= image_tag 'github_btn.svg', :width => '35', :height => '35', :class => 'insta_btn' %>
-        <% end %>
-  </div>
-  <%= yield %>
+  
+
+<%= yield %>
 
 </body>
+
 <footer>
   <div class="homepage__nav">
         <%= link_to 'about', 'about.html' %>
         <%= link_to 'portfolio', 'portfolio.html' %>
         <%= link_to 'contact', 'contact.html' %>
   </div>
-
-</div>
 </footer>
 </html>

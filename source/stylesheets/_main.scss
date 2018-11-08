@@ -1,0 +1,52 @@
+.homepage__video-logo {
+  @include position(relative, 0 0 0 50%);
+  background-color: blue;
+  height: 25vh;
+  margin-left: -40%;
+  width: 80%;
+  height: 80vh;
+}
+
+.rvnsc__logo {
+  @include position(absolute, 10% 0 0 20%);
+  margin-top: 10%;
+  margin-left: -10%;
+  width: 80%;
+}
+
+.homepage__nav {
+@include position(relative, 0 0 0 72%);
+margin-top: .5em;
+}
+
+.homepage__nav a {
+  margin-right: 1em;
+}
+
+.footer__banner {
+  background-color: #FF5D5D;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & button {
+    background-color: white;
+    color: red;
+    width: 20%;
+    padding: 2em;
+    margin-top: 1em;
+    border-radius: 25px;
+  }
+}
+
+.copyright__type {
+  @include position(relative, 10% 0 0 40%);
+}
+
+.nav__top {
+  background-color: #FF5D5D;
+  position: sticky;
+  padding: 1vh;
+  margin-bottom: 2em;
+}

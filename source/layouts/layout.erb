@@ -6,12 +6,37 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Middleman" %></title>
+    <title><%= current_page.data.title || "Ravenous Creative" %></title>
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
   </head>
   <body>
-    MOOSE
+  <div class="nav__top">
+    <div class="page_social_links">
+    <% link_to 'http://www.instagram.com' do %>
+      <%= image_tag 'insta_btn.svg', :class => 'homepage_btn' %>
+    <% end %>
+    <% link_to 'http://www.twitter.com' do %>
+      <%= image_tag 'twit_btn.svg', :class => 'homepage_btn' %>
+    <% end %>
+    <% link_to 'http://www.dribbble.com' do %>
+      <%= image_tag 'dribb_btn.svg', :class => 'homepage_btn' %>
+    <% end %>
+    <% link_to 'http://www.behance.com' do %>
+      <%= image_tag 'behance_btn.svg', :class => 'homepage_btn' %>
+    <% end %>
+    <% link_to 'http://www.github.com' do %>
+      <%= image_tag 'github_btn.svg', :class => 'homepage_btn' %>
+    <% end %>
+  </div>
+</div>
+
     <%= yield %>
+
+    <div class="footer__banner">
+      <button>let's connect</button>
+      <p class="copyright__type">copyright 2018</p>
+    </div>
+    </div>
   </body>
 </html>
