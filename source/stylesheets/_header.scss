@@ -1,37 +1,20 @@
-
-body {
-  background-color: white;
-  color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
-    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
-    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  height: 100%;
-}
-
-a {
-  color: rgba(#000, 0.7);
-  &:focus,
-  &:hover {
-    color: rgba(#000, 0.6);
-
-  }
-}
-
 .homepage_btn {
   width: 10%;
 }
 
 .homepage_social_links {
-  @include grid-column(4);
-  margin-top: 1em;
+  margin-top: 2em;
+  margin-left: 2em;
+  width: 25em;
 }
 .homepage_social_links a {
   text-decoration: none;
 }
 
-.page_social_links a {
-  text-decoration: none;
+.homepage__nav {
+  @include grid-column(3);
+  @include grid-push(8);
+  margin-top: 1em;
 }
 
 .homepage__nav a {
@@ -40,8 +23,53 @@ a {
   text-decoration: none;
 
   &:hover {
+    font-weight: bold;
     text-decoration: underline;
   }
-
 }
 
+.mainpage__nav {
+  @include grid-column(3);
+  @include grid-push(3.5);
+  text-align: right; 
+  padding: 1em;
+  font-size: 1.2em;
+
+  & a {
+     color: white;
+    text-decoration: none;
+  }
+
+  & a:hover {
+    font-weight: bold;
+  }
+}
+
+.nav__top {
+  background-color: #FF5D5D;
+  display: inline-flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.page_social_links {
+  width: 25rem; 
+  margin: 1.5em;
+  text-decoration: none;
+}
+
+.page_social_links a {
+  text-decoration: none;
+}
+
+.page-layout__container {
+  @include grid-container;
+  @include grid-visual;
+}
+
+.rvnsc__logo--stamp {
+  width: 6em;
+  margin-left: 2em;
+}

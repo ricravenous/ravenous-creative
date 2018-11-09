@@ -11,32 +11,43 @@
     <%= javascript_include_tag "site" %>
   </head>
   <body>
-  <div class="nav__top">
-    <div class="page_social_links">
-    <% link_to 'http://www.instagram.com' do %>
-      <%= image_tag 'insta_btn.svg', :class => 'homepage_btn' %>
+  <div class="page-layout__container">
+    <div class="nav__top">
+    <% link_to 'index.html' do %>
+    <%= image_tag 'logo__box--stamp.svg', :class => 'rvnsc__logo--stamp' %>
     <% end %>
-    <% link_to 'http://www.twitter.com' do %>
-      <%= image_tag 'twit_btn.svg', :class => 'homepage_btn' %>
-    <% end %>
-    <% link_to 'http://www.dribbble.com' do %>
-      <%= image_tag 'dribb_btn.svg', :class => 'homepage_btn' %>
-    <% end %>
-    <% link_to 'http://www.behance.com' do %>
-      <%= image_tag 'behance_btn.svg', :class => 'homepage_btn' %>
-    <% end %>
-    <% link_to 'http://www.github.com' do %>
-      <%= image_tag 'github_btn.svg', :class => 'homepage_btn' %>
-    <% end %>
+
+      <div class="page_social_links">
+      <% link_to 'http://www.instagram.com' do %>
+        <%= image_tag 'insta_btn.svg', :class => 'homepage_btn' %>
+      <% end %>
+      <% link_to 'http://www.twitter.com' do %>
+        <%= image_tag 'twit_btn.svg', :class => 'homepage_btn' %>
+      <% end %>
+      <% link_to 'http://www.dribbble.com' do %>
+        <%= image_tag 'dribb_btn.svg', :class => 'homepage_btn' %>
+      <% end %>
+      <% link_to 'http://www.behance.com' do %>
+        <%= image_tag 'behance_btn.svg', :class => 'homepage_btn' %>
+      <% end %>
+      <% link_to 'http://www.github.com' do %>
+        <%= image_tag 'github_btn.svg', :class => 'homepage_btn' %>
+      <% end %>
   </div>
-</div>
-
-    <%= yield %>
-
-    <div class="footer__banner">
-      <button>let's connect</button>
-      <p class="copyright__type">copyright 2018</p>
+      <div class="mainpage__nav">
+        <%= link_to 'about', 'about.html' %> &middot;
+        <%= link_to 'portfolio', 'portfolio.html' %> &middot;
+        <%= link_to 'contact', 'contact.html' %>
     </div>
-    </div>
+  </div>
+
+      <%= yield %>
+
+      <div class="footer__banner">
+        <button>let's connect</button>
+        <p class="copyright__type">copyright 2018</p>
+      </div>
+  </div>
+  </body>
   </body>
 </html>
