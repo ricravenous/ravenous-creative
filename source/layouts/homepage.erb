@@ -10,18 +10,19 @@
   <%= stylesheet_link_tag "site" %>
   <%= javascript_include_tag "site" %>
 </head>
-<body>
+<body>  
+<div class="home__container--main">
   
+  <%= yield %>
 
-<%= yield %>
+  <div class="homepage__nav">
+    <%= link_to 'about', 'about.html' %> &middot;
+    <%= link_to 'portfolio', 'portfolio.html' %> &middot;
+    <%= link_to 'contact', 'contact.html' %>
+  </div>
+
+</div>
 
 </body>
 
-<footer>
-  <div class="homepage__nav">
-        <%= link_to 'about', 'about.html' %>
-        <%= link_to 'portfolio', 'portfolio.html' %>
-        <%= link_to 'contact', 'contact.html' %>
-  </div>
-</footer>
 </html>

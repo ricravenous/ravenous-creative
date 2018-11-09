@@ -19,15 +19,29 @@ a {
 }
 
 .homepage_btn {
-  width: 3%;
+  width: 10%;
 }
 
+.homepage_social_links {
+  @include grid-column(4);
+  margin-top: 1em;
+}
 .homepage_social_links a {
   text-decoration: none;
-  @include position(relative, 1em 0 null .8em);
 }
 
 .page_social_links a {
   text-decoration: none;
+}
+
+.homepage__nav a {
+  margin-left: .5em;
+  margin-right: .5em;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
 }
 

@@ -1,26 +1,15 @@
+.home__container--main {
+  @include grid-container;
+  width: 100%;
+}
+
 .homepage__video-logo {
-  @include position(relative, 0 0 0 50%);
   background-color: blue;
-  height: 25vh;
-  margin-left: -40%;
+  height: 75%;
   width: 80%;
-  height: 80vh;
-}
-
-.rvnsc__logo {
-  @include position(absolute, 10% 0 0 20%);
-  margin-top: 10%;
-  margin-left: -10%;
-  width: 80%;
-}
-
-.homepage__nav {
-@include position(relative, 0 0 0 72%);
-margin-top: .5em;
-}
-
-.homepage__nav a {
-  margin-right: 1em;
+  @include grid-column(10);
+  @include grid-shift(1);
+  padding-bottom: 10%;
 }
 
 .footer__banner {
@@ -32,21 +21,31 @@ margin-top: .5em;
 
   & button {
     background-color: white;
-    color: red;
-    width: 20%;
-    padding: 2em;
-    margin-top: 1em;
     border-radius: 25px;
+    border-width: 0px;
+    color: red;
+    margin-top: 1em;
+    padding: 2em;
+    width: 20%;
   }
+
 }
 
-.copyright__type {
-  @include position(relative, 10% 0 0 40%);
+.rvnsc__logo {
+  @include grid-column(10);
+  @include grid-push(1);
+  margin-top: 5em;
 }
 
 .nav__top {
   background-color: #FF5D5D;
-  position: sticky;
-  padding: 1vh;
   margin-bottom: 2em;
+  padding: 1vh;
+  position: sticky;
+}
+
+.homepage__nav {
+  @include grid-column(3);
+  @include grid-push(8);
+  margin-top: 1em;
 }
