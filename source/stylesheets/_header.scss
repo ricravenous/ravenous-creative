@@ -66,7 +66,7 @@
 
 .page-layout__container {
   @include grid-container;
-  @include grid-visual;
+  // @include grid-visual;
 }
 
 .rvnsc__logo--stamp {

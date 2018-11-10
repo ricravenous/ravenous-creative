@@ -1,0 +1,12 @@
+.portfolio_navigation {
+  @include grid-column(12);
+  text-align: center;
+}
+
+.portfolio_container {
+  @include grid-column(3);
+  @include grid-push(.5);
+  border: 10px solid;
+  height: 12em;
+  margin-bottom: 5em;
+}
