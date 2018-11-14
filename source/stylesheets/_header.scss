@@ -3,8 +3,8 @@
 }
 
 .homepage_social_links {
-  margin-top: 2em;
   margin-left: 2em;
+  margin-top: 2em;
   width: 25em;
 }
 .homepage_social_links a {
@@ -31,9 +31,9 @@
 .mainpage__nav {
   @include grid-column(3);
   @include grid-push(3.5);
-  text-align: right; 
-  padding: 1em;
   font-size: 1.2em;
+  padding: 1em;
+  text-align: right; 
 
   & a {
      color: white;
@@ -46,22 +46,23 @@
 }
 
 .nav__top {
+  align-items: center;
   background-color: #FF5D5D;
   display: inline-flex;
-  align-items: center;
   position: sticky;
   top: 0;
   width: 100%;
 }
 
 .page_social_links {
-  width: 25rem; 
   margin: 1.5em;
   text-decoration: none;
-}
+  width: 25rem; 
 
-.page_social_links a {
-  text-decoration: none;
+  & a {
+    text-decoration: none;
+  }
+
 }
 
 .page-layout__container {
@@ -70,6 +71,6 @@
 }
 
 .rvnsc__logo--stamp {
-  width: 6em;
   margin-left: 2em;
+  width: 6em;
 }
