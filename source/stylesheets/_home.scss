@@ -34,53 +34,10 @@ a {
   width: 80%;
 }
 
-.footer__banner {
-  @include grid-column(12);
-  background-color: #FF5D5D;
-  height: 10em;
-
-  & button {
-    @include grid-column(3);
-    @include grid-push(4.5);
-    background-color: white;
-    border-radius: 25px;
-    border-width: 0px;
-    color: red;
-    margin-top: 1em;
-    padding: 1.5em;
-  }
-
-  & button:hover {
-    background-color: red;
-    color: white;
-  }
-
-}
-
-.copyright__type {
-  @include grid-column(3);
-  @include grid-push(9);
-  text-align: center;
-  color: white;
-}
-
 .rvnsc__logo {
   @include grid-column(10);
   @include grid-push(1);
   margin-top: 5em;
-}
-
-.about_section-left {
-  @include grid-column(4);
-  @include grid-push(1);
-  height: 10vh;
-}
-
-.about_section-right {
-  @include grid-column(6);
-  @include grid-push(1);
-  padding-bottom: 2em;
-  font-size: 1.5em;
 }
 
 

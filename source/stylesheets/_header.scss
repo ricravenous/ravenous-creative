@@ -11,23 +11,6 @@
   text-decoration: none;
 }
 
-.homepage__nav {
-  @include grid-column(3);
-  @include grid-push(8);
-  margin-top: 1em;
-}
-
-.homepage__nav a {
-  margin-left: .5em;
-  margin-right: .5em;
-  text-decoration: none;
-
-  &:hover {
-    font-weight: bold;
-    text-decoration: underline;
-  }
-}
-
 .mainpage__nav {
   @include grid-column(3);
   @include grid-push(3.5);

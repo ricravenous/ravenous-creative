@@ -1,0 +1,13 @@
+.about_section-left {
+  @include grid-column(4);
+  @include grid-push(1);
+  height: 10vh;
+}
+
+.about_section-right {
+  @include grid-column(6);
+  @include grid-push(1);
+  padding-bottom: 2em;
+  font-size: 1.5em;
+}
+

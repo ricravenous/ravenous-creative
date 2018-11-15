@@ -1,0 +1,46 @@
+.homepage__nav {
+  @include grid-column(3);
+  @include grid-push(8);
+  margin-top: 1em;
+}
+
+.homepage__nav a {
+  margin-left: .5em;
+  margin-right: .5em;
+  text-decoration: none;
+
+  &:hover {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
+
+.footer__banner {
+  @include grid-column(12);
+  background-color: #FF5D5D;
+  height: 10em;
+
+  & button {
+    @include grid-column(3);
+    @include grid-push(4.5);
+    background-color: white;
+    border-radius: 25px;
+    border-width: 0px;
+    color: red;
+    margin-top: 1em;
+    padding: 1.5em;
+  }
+
+  & button:hover {
+    background-color: red;
+    color: white;
+  }
+
+}
+
+.copyright__type {
+  @include grid-column(3);
+  @include grid-push(9);
+  text-align: center;
+  color: white;
+}
