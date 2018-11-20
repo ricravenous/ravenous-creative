@@ -2,7 +2,7 @@ body {
   background-color: white;
   color: #333;
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
-    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
+    "Segoe UI", "Lucida Grande", "Helvetica Neue", $font-stack-helvetica, "Fira Sans",
     "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
     "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
   height: 100%;
@@ -11,11 +11,24 @@ body {
 
 a {
   color: rgba(#000, 0.7);
+  font-family: pt-mono-regular;
+
   &:focus,
   &:hover {
     color: rgba(#000, 0.6);
-
   }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: anivers-small-caps;
+}
+
+b {
+  font-family: pt-mono-bold;
+}
+
+p, button {
+  font-family: pt-mono-regular;
 }
 
 .home__container--main {
@@ -23,6 +36,10 @@ a {
   height: 100%;
   margin: 0px;
   justify-content: center;
+
+  @include grid-media($custom-neat-grid) {
+    height: 100vh;
+  }
 }
 
 .homepage__video-logo {
@@ -30,14 +47,39 @@ a {
   @include grid-shift(1);
   background-color: #FF5D5D;
   height: 75%;
+  overflow: hidden;
   padding-bottom: 10%;
+  text-align: center;
   width: 80%;
+  
+  @include grid-media($custom-neat-grid) {
+    @include grid-shift(0);
+    margin-left: 0;
+    width: 100%;
+  }
 }
 
 .rvnsc__logo {
   @include grid-column(10);
   @include grid-push(1);
   margin-top: 5em;
+
+  @include grid-media($custom-neat-grid) {
+    display: none;
+  }
+
 }
 
+.rvnsc__logo--mobile {
+  display: none;
+ 
+  @include grid-media($custom-neat-grid) {
+    display: inline-block;
+    width: 45%;
+    margin-top: 2.5em;
+  }
+  
+  @include grid-media($custom-neat-grid) {
 
+  }
+}

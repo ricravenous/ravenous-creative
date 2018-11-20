@@ -6,3 +6,23 @@ $custom-neat-grid: (
   media: "screen and (min-width: 999px)",
 );
 
+/****
+Z-Index Space
+****/
+
+
+/****
+Responsive Variables
+****/
+
+$custom-neat-grid: (
+  media: "screen and (max-width: 1024px)",
+);
+
+$custom-neat-grid--_5SE: (
+  media: "screen and (max-width: 320px)",
+);
+
+$custom-neat-grid--mobile-L: (
+  media: "screen and (max-width: 425px)",
+);

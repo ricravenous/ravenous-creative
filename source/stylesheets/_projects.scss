@@ -1,0 +1,93 @@
+.project--container {
+  @include grid-column(12);
+}
+
+.project-page__title {
+  @include grid-column(11);
+  @include grid-push (1);
+
+  & h1 {
+    font-size: 4em;
+    margin-top: 0.2em;
+  }
+
+  @include grid-media($custom-neat-grid){
+    @include grid-column(12);
+    @include grid-push(0);
+    margin-bottom: -2em;
+  }
+
+}
+
+.project-page__overview {
+  @include grid-column(12);
+
+}
+
+.project-page__overview-bottom-row {
+  @include grid-column(10);
+  @include grid-push(4);
+  
+  @include grid-media($custom-neat-grid){
+    @include grid-column(12);
+    @include grid-push(0);
+
+  }
+}
+
+.project-page__overview-top-row {
+  @include grid-column(10);
+  @include grid-push(4);
+  
+  @include grid-media($custom-neat-grid){
+    @include grid-column(12);
+    @include grid-push(0);
+  }
+}
+
+.project-page__overview-element {
+  @include grid-column(3);
+  display: inline-block;
+
+  & b {
+    margin-right: 2em;
+  }
+
+  @include grid-media($custom-neat-grid){
+    @include grid-column(12);
+    & b {
+    margin-right: 0em;}
+  }
+}
+
+.project-page__copy {
+  @include grid-column(6);
+  @include grid-push(3);
+  padding-top: 3em;
+  padding-bottom: 3em;
+
+  @include grid-media($custom-neat-grid){
+    @include grid-column(11);
+    @include grid-push(0);
+    font-size: 1.5em;
+    padding-top: 1em;
+  }
+}
+
+.project-page__hero {
+  @include grid-column(12);
+  background-color: #FF5D5D;
+  height: 35em;
+  margin-top: 3em;
+  
+  @include grid-media($custom-neat-grid){
+    height: 20em;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.project-page_section1--left {
+
+
+}

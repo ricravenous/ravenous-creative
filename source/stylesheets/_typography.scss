@@ -1,0 +1,23 @@
+@include font-face(
+  "anivers-small-caps",
+  "../fonts/Anivers_SmallCaps-webfont",
+  ("woff2", "woff")
+) {
+  font-style: normal;
+}
+
+@include font-face(
+  "pt-mono-regular",
+  "../fonts/PT-Mono-Regular",
+  ("ttf")
+) {
+  font-style: normal;
+}
+
+@include font-face(
+  "pt-mono-bold",
+  "../fonts/PT-Mono-Bold",
+  ("ttf")
+) {
+  font-style: normal;
+}

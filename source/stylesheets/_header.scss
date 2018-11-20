@@ -1,31 +1,59 @@
 .homepage_btn {
   width: 10%;
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1.0;
+  }
+
+  @include grid-media($custom-neat-grid){
+    width: 9%;
+  }
+
+  @include grid-media($custom-neat-grid--mobile-L){
+    width: 15%;
+  }
+
 }
 
 .homepage_social_links {
   margin-left: 2em;
   margin-top: 2em;
   width: 25em;
-}
-.homepage_social_links a {
-  text-decoration: none;
+  & a {
+    text-decoration: none;
+  }
+
+  @include grid-media($custom-neat-grid) {
+    width: vmax;
+    text-align: center;
+    margin-left: 0;
+    width: 100%;
+  }
 }
 
 .mainpage__nav {
-  @include grid-column(3);
-  @include grid-push(3.5);
+  @include grid-column(4);
+  @include grid-push(2.5);
   font-size: 1.2em;
   padding: 1em;
-  text-align: right; 
+  text-align: right;
+  color: white;
 
   & a {
-     color: white;
+    color: white;
     text-decoration: none;
   }
 
   & a:hover {
-    font-weight: bold;
+    color: white;
+    font-family: pt-mono-bold;
   }
+
+  @include grid-media($custom-neat-grid){
+    display: none;
+  }
+
 }
 
 .nav__top {
@@ -35,6 +63,18 @@
   position: sticky;
   top: 0;
   width: 100%;
+  z-index: 2;
+
+@include grid-media($custom-neat-grid){
+  display: inline-flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  top: 0;
+  height: 6em;
+}
+
 }
 
 .page_social_links {
@@ -46,6 +86,11 @@
     text-decoration: none;
   }
 
+@include grid-media($custom-neat-grid){
+  width: 100%;
+  text-align: center;
+}
+
 }
 
 .page-layout__container {
@@ -56,4 +101,34 @@
 .rvnsc__logo--stamp {
   margin-left: 2em;
   width: 6em;
+
+@include grid-media($custom-neat-grid){
+  display: none;
+}
+
+}
+
+.homepage__nav {
+  @include grid-column(5);
+  @include grid-push(6);
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: right;
+
+  @include grid-media($custom-neat-grid){
+    @include grid-column(12);
+    @include grid-push(0);
+    text-align: center;
+    font-size: 1.4em;
+  }
+}
+
+.homepage__nav a {
+  margin-left: .5em;
+  margin-right: .5em;
+  text-decoration: none;
+
+  &:hover {
+    font-weight: bold;
+  }
 }
