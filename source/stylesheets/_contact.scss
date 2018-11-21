@@ -4,8 +4,52 @@
 }
 
 .contact_section-right {
-  @include grid-column(5);
-  @include grid-push(2);
+
+  @include grid-column(6.5);
   padding-bottom: 2em;
   font-size: 1.5em;
+
 }
+
+.form--id {
+
+  border-color: $red--rvnsc;
+  border: 1px solid;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  color: $red--rvnsc;
+  font-size: .8em;
+  font-family: $font--paragraph;
+  height: 2em;
+
+}
+
+.form--info {
+
+  background-image: -webkit-linear-gradient(white, white 30px, $red--rvnsc 30px, $red--rvnsc 31px, $red--rvnsc 31px);
+  background-image: -moz-linear-gradient(white, white 30px, $red--rvnsc 30px, $red--rvnsc 31px, $red--rvnsc 31px);
+  background-image: -ms-linear-gradient(white, white 30px, $red--rvnsc 30px, $red--rvnsc 31px, $red--rvnsc 31px);
+  background-image: -o-linear-gradient(white, white 30px, $red--rvnsc 30px, $red--rvnsc 31px, $red--rvnsc 31px);
+  background-image: linear-gradient(white, white 30px, $red--rvnsc 30px, $red--rvnsc 31px, $red--rvnsc 31px);
+  background-size: 100% 31px;
+  border: none;
+  border-radius: 0px;
+  line-height: 25px;
+  font-family: $font--paragraph;
+  font-size: .7em;
+  margin-top: 2em;
+
+}
+
+.form__textarea {
+  padding: .5em;
+}
+
+.form__button {
+  padding: .5em;
+  font-size: .7em;
+  border-radius: 10px;
+  width: 15em
+}
+

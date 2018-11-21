@@ -47,22 +47,37 @@
   flex-direction: column;
   height: 10em;
   width: 100%;
+  text-align: center;
 
-  & button {
+  & a {
     @include grid-column(3);
     @include grid-push(4.5);
     background-color: white;
     border-radius: 25px;
     border-width: 0px;
-    color: red;
-    padding: 1.5em;
-    margin-top: 4em;
+    margin-top: $margin--small - 2;
+    padding: 1.2em;
+    opacity: 0.5;
   }
 
-  & button:hover {
-    background-color: red;
-    color: white;
+  & button {
+  
+    border-width: 0px;
+    background-color: none;
+    width: 100%;
   }
+
+  & a:hover {
+    opacity: 1;  
+
+    button {
+      font-family: $font--bold;
+      color: red;
+    }
+  
+  }
+
+
 
   @include grid-media($custom-neat-grid){
     display: none;

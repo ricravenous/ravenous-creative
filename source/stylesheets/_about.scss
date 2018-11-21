@@ -40,7 +40,7 @@ h1.about-section__header--back{
 .about-section__secondary--header {
   @include grid-column(7);
   @include grid-push(1);
-  font-size: 1.5em;
+  font-size: $font-size--base;
   margin-top: -6.5em;
 
   @include grid-media($custom-neat-grid){
@@ -70,9 +70,10 @@ p.about--offerings {
 }
 
 .about_section-right {
-  @include grid-column(7);
+  @include grid-column(6.5);
   margin-left: 2em;
   margin-bottom: 5em;
+  overflow: hidden;
 
   @include grid-media($custom-neat-grid){
     @include grid-column(12);

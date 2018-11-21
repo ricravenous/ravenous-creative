@@ -16,7 +16,7 @@
 
 }
 
-.homepage_social_links {
+.menu--homepage {
   margin-left: 2em;
   margin-top: 2em;
   width: 25em;
@@ -108,7 +108,7 @@
 
 }
 
-.homepage__nav {
+.nav--homepage {
   @include grid-column(5);
   @include grid-push(6);
   margin-top: 1em;
@@ -121,14 +121,14 @@
     text-align: center;
     font-size: 1.4em;
   }
-}
 
-.homepage__nav a {
-  margin-left: .5em;
-  margin-right: .5em;
-  text-decoration: none;
+  & a {
+    margin-left: .5em;
+    margin-right: .5em;
+    text-decoration: none;
 
-  &:hover {
-    font-weight: bold;
+    &:hover {
+      font-weight: bold;
+    }
   }
 }

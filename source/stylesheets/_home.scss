@@ -1,6 +1,6 @@
 body {
   background-color: white;
-  color: #333;
+  color: $black--rvnsc;
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
     "Segoe UI", "Lucida Grande", "Helvetica Neue", $font-stack-helvetica, "Fira Sans",
     "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
@@ -10,28 +10,47 @@ body {
 }
 
 a {
-  color: rgba(#000, 0.7);
-  font-family: pt-mono-regular;
+  color: rgba($black--rvnsc, 0.7);
+  font-family: $font--paragraph;
 
   &:focus,
   &:hover {
-    color: rgba(#000, 0.6);
+    font-family: $font--bold; 
+    color: rgba($red--rvnsc, 0.8);
   }
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: anivers-small-caps;
+  font-family: $font--header;
 }
 
 b {
-  font-family: pt-mono-bold;
+  font-family: $font--bold;
 }
 
-p, button {
-  font-family: pt-mono-regular;
+p {
+  font-family: $font--paragraph;
 }
 
-.home__container--main {
+button {
+  font-size: $font-size--button;
+  font-family: $font--paragraph;
+  
+  &:hover {
+    color: $white--rvnsc;
+  }
+
+  & a {
+    text-decoration: none;
+  }
+
+  & a:hover {
+    text-decoration: none;
+    color: $white--rvnsc;
+  }
+}
+
+.template__container--homepage {
   @include grid-container;
   height: 100%;
   margin: 0px;
@@ -42,7 +61,7 @@ p, button {
   }
 }
 
-.homepage__video-logo {
+.container--homepage {
   @include grid-column(12);
   @include grid-shift(1);
   background-color: #FF5D5D;
@@ -62,7 +81,7 @@ p, button {
 .rvnsc__logo {
   @include grid-column(10);
   @include grid-push(1);
-  margin-top: 5em;
+  margin-top: $margin--small;
 
   @include grid-media($custom-neat-grid) {
     display: none;
@@ -76,7 +95,7 @@ p, button {
   @include grid-media($custom-neat-grid) {
     display: inline-block;
     width: 45%;
-    margin-top: 2.5em;
+    margin-top: $margin--small/2;
   }
   
   @include grid-media($custom-neat-grid) {

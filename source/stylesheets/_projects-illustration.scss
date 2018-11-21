@@ -10,6 +10,7 @@
 
 .illustration-page__image-container {
   @include grid-column(12);
+  margin-bottom: 8em;
 }
 
 .illustration-page__image {

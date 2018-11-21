@@ -1,23 +1,40 @@
-/****
+/*********
+Color
+*********/
+
+$black--rvnsc: #222222;
+$red--rvnsc: #FF5D5D;
+$white--rvnsc: #FCFCFC;
+
+/*********
+Size
+*********/
+$height--base: 10em;
+$font-size--base: 1.5em;
+$font-size--button: .9em;
+
+/********
+Space
+*********/
+$margin--small: 5em;
+
+
+/********
 Typography
-****/
+*********/
 
-$custom-neat-grid: (
-  media: "screen and (min-width: 999px)",
-);
+$font--header: anivers-small-caps;
+$font--bold: pt-mono-bold;
+$font--paragraph: pt-mono-regular;
 
-/****
-Z-Index Space
-****/
+/********
+Z-Index
+*********/
 
 
-/****
+/********
 Responsive Variables
-****/
-
-$custom-neat-grid: (
-  media: "screen and (max-width: 1024px)",
-);
+*********/
 
 $custom-neat-grid--_5SE: (
   media: "screen and (max-width: 320px)",
@@ -25,4 +42,12 @@ $custom-neat-grid--_5SE: (
 
 $custom-neat-grid--mobile-L: (
   media: "screen and (max-width: 425px)",
+);
+
+$custom-neat-grid: (
+  media: "screen and (min-width: 999px)",
+);
+
+$custom-neat-grid: (
+  media: "screen and (max-width: 1024px)",
 );
