@@ -1,6 +1,8 @@
 .homepage_btn {
   width: 10%;
   opacity: 0.8;
+  transition: opacity 0.3s ease-out;
+
 
   &:hover {
     opacity: 1.0;
@@ -20,8 +22,11 @@
   margin-left: 2em;
   margin-top: 2em;
   width: 25em;
+
   & a {
     text-decoration: none;
+    transition: all 0.5s ease;
+
   }
 
   @include grid-media($custom-neat-grid) {
@@ -39,6 +44,7 @@
   padding: 1em;
   text-align: right;
   color: white;
+
 
   & a {
     color: white;
@@ -80,7 +86,7 @@
 .page_social_links {
   margin: 1.5em;
   text-decoration: none;
-  width: 25rem; 
+  width: 25rem;
 
   & a {
     text-decoration: none;
@@ -96,6 +102,11 @@
 .page-layout__container {
   @include grid-container;
   // @include grid-visual;
+    background-image: url('../images/bkg_img--v.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left top; 
+    background-size: 500px;
 }
 
 .rvnsc__logo--stamp {
@@ -126,6 +137,8 @@
     margin-left: .5em;
     margin-right: .5em;
     text-decoration: none;
+    transition: all 0.5s ease;
+
 
     &:hover {
       font-weight: bold;

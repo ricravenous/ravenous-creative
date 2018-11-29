@@ -17,7 +17,7 @@ $font-size--button: .9em;
 Space
 *********/
 $margin--small: 5em;
-
+$padding--medium: 10px;
 
 /********
 Typography
@@ -30,7 +30,9 @@ $font--paragraph: pt-mono-regular;
 /********
 Z-Index
 *********/
-
+$front-z-index: 2;
+$center-z-index: 0;
+$back-z-index: -1;
 
 /********
 Responsive Variables

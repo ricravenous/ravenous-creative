@@ -4,29 +4,27 @@
 }
 
 .contact_section-right {
-
   @include grid-column(6.5);
   padding-bottom: 2em;
   font-size: 1.5em;
-
 }
 
 .form--id {
-
   border-color: $red--rvnsc;
   border: 1px solid;
   border-left: none;
   border-right: none;
   border-top: none;
   color: $red--rvnsc;
-  font-size: .8em;
   font-family: $font--paragraph;
-  height: 2em;
-
+  font-size: .8em;
+  height: 1.5em;
+  opacity: .7;
+  padding: $padding--medium;
+  margin-top: 2em;
 }
 
 .form--info {
-
   background-image: -webkit-linear-gradient(white, white 30px, $red--rvnsc 30px, $red--rvnsc 31px, $red--rvnsc 31px);
   background-image: -moz-linear-gradient(white, white 30px, $red--rvnsc 30px, $red--rvnsc 31px, $red--rvnsc 31px);
   background-image: -ms-linear-gradient(white, white 30px, $red--rvnsc 30px, $red--rvnsc 31px, $red--rvnsc 31px);
@@ -35,11 +33,12 @@
   background-size: 100% 31px;
   border: none;
   border-radius: 0px;
-  line-height: 25px;
+  line-height: 30px;
   font-family: $font--paragraph;
   font-size: .7em;
-  margin-top: 2em;
-
+  margin-top: $margin--small - 2;
+  padding: $padding--medium - 5;
+  opacity: .7;
 }
 
 .form__textarea {
@@ -49,7 +48,18 @@
 .form__button {
   padding: .5em;
   font-size: .7em;
-  border-radius: 10px;
-  width: 15em
+  border-radius: 25px;
+  border-color: white;
+  width: 15em;
+  color: $white--rvnsc;
+  background-color: $red--rvnsc;
+  transition: all 0.5s ease;
+
+  &:hover {
+    background-color: red;
+    font-family: $font--bold;
+    width: 16em;
+
+  }
 }
 
