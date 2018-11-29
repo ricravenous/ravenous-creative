@@ -35,7 +35,7 @@ p {
 button {
   font-size: $font-size--button;
   font-family: $font--paragraph;
-  
+
   &:hover {
     color: $white--rvnsc;
   }
@@ -56,7 +56,7 @@ button {
   margin: 0px;
   justify-content: center;
 
-  @include grid-media($custom-neat-grid) {
+  @include grid-media($custom-neat-grid, $custom-neat-grid--iPad) {
     height: 100vh;
   }
 }
@@ -71,7 +71,7 @@ button {
   text-align: center;
   width: 80%;
   
-  @include grid-media($custom-neat-grid) {
+  @include grid-media($custom-neat-grid, $custom-neat-grid--iPad) {
     @include grid-shift(0);
     margin-left: 0;
     width: 100%;
@@ -83,7 +83,7 @@ button {
   @include grid-push(1);
   margin-top: $margin--small;
 
-  @include grid-media($custom-neat-grid) {
+  @include grid-media($custom-neat-grid, $custom-neat-grid--iPad) {
     display: none;
   }
 
@@ -92,13 +92,13 @@ button {
 .rvnsc__logo--mobile {
   display: none;
  
-  @include grid-media($custom-neat-grid) {
+  @include grid-media($custom-neat-grid, $custom-neat-grid--iPad) {
     display: inline-block;
     width: 45%;
     margin-top: $margin--small/2;
   }
   
-  @include grid-media($custom-neat-grid) {
+  @include grid-media($custom-neat-grid, $custom-neat-grid--iPad) {
 
   }
 }

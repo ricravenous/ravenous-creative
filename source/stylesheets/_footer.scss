@@ -1,7 +1,7 @@
 .footer-mobile__nav {
   display: none;
 
-  @include grid-media($custom-neat-grid){
+  @include grid-media($custom-neat-grid, $custom-neat-grid--iPad){
     width: 100%;
     align-items: center;
     background-color: #FF5D5D;
@@ -78,11 +78,12 @@
     button {
       font-family: $font--bold;
       color: red;
+      cursor: pointer;
     }
   
   }
 
-  @include grid-media($custom-neat-grid){
+  @include grid-media($custom-neat-grid, $custom-neat-grid--iPad){
     display: none;
   }
  

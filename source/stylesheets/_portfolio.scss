@@ -4,16 +4,98 @@
   font-size: $font-size--base;
 }
 
-.portfolio_container {
+input[type="radio"] {
+    display:none;
+}
+
+label {
+  width:23%;
+  float:left;
+  text-align:center;
+  border-bottom: 3px solid $red--rvnsc;
+  color: $black--rvnsc;
+  padding:0.2%;
+  margin:0.2%;
+  margin-top: 20px;
+  margin-bottom:20px;
+  cursor:pointer;
+  transition: all 0.5s ease;
+
+ @include grid-media($custom-neat-grid, $custom-neat-grid--iPad){
+    width: 90%;
+    border-bottom: 1px solid $red--rvnsc;
+    margin-left: 5%;
+  }
+
+  &:hover {
+    border-radius: 25px;
+    background-color: $red--rvnsc;
+    color: $white--rvnsc;
+  }
+
+}
+
+input[type="radio"][id="design"]:checked + label {
+  border-radius: 25px;
+  background-color: $red--rvnsc;
+  color: $white--rvnsc;
+}
+
+input[type="radio"][id="design"]:checked ~ .proj__illus, [id="design"]:checked ~ .proj__type {
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+}
+
+input[type="radio"][id="illustration"]:checked + label {
+  border-radius: 25px;
+  background-color: $red--rvnsc;
+  color: $white--rvnsc;
+}
+
+input[type="radio"][id="illustration"]:checked ~ .proj__design, [id="illustration"]:checked ~ .proj__type {
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+}
+
+input[type="radio"][id="type-design"]:checked + label {
+  border-radius: 25px;
+  background-color: $red--rvnsc;
+  color: $white--rvnsc;
+}
+
+input[type="radio"][id="type-design"]:checked ~ .proj__illus, [id="type-design"]:checked ~ .proj__design {
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+}
+
+input[type="radio"][id="reset"]:checked + label {
+  border-radius: 25px;
+  background-color: $red--rvnsc;
+  color: $white--rvnsc;
+}
+
+
+.proj__design, .proj__illus, .proj__type {
   @include grid-column(3.8);
   border: 1px solid;
   border-color: #FF5D5D;
   height: $height--base + 8;
   margin-bottom: 3em;
-  padding: .5em;
   overflow: hidden;
+  padding: .5em;
+  text-decoration: none;
+  transition: all 0.5s ease;
 
-  @include grid-media($custom-neat-grid){
+  @include grid-media($custom-neat-grid, $custom-neat-grid--iPad){
     @include grid-column(12);
     height: $height--base;
     padding: 0em;
@@ -23,15 +105,15 @@
 
 h1.portfolio--title {
   margin-top: 6em;
-  @include grid-media($custom-neat-grid){
+  @include grid-media($custom-neat-grid, $custom-neat-grid--iPad){
     margin-top: $margin--small - 3;
     margin-left: 0.5em;
   }
 }
 
-.portfolio-category {
-    @include grid-media($custom-neat-grid){
-  margin-left: 1.3em;
-  margin-top: -1em;
-}
+  .portfolio-category {
+    @include grid-media($custom-neat-grid, $custom-neat-grid--iPad){
+    margin-left: 1.3em;
+    margin-top: -1em;
+  }
 }
