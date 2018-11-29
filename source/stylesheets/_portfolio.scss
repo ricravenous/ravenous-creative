@@ -9,16 +9,17 @@ input[type="radio"] {
 }
 
 label {
-  width:24%;
+
+  width:15%;
   float:left;
   text-align:center;
-  border-bottom: 3px solid $red--rvnsc;
+  border-bottom: 2px solid $red--rvnsc;
   color: $black--rvnsc;
-  padding:0.2%;
   margin:0.2%;
   margin-top: 20px;
   margin-bottom:20px;
-  cursor:pointer;
+  margin-left: 8%;
+  cursor: pointer;
   transition: all 0.5s ease;
 
  @include grid-media($custom-neat-grid, $custom-neat-grid--iPad){
