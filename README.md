@@ -1,1 +1,1 @@
-# Ravenous Middleman WP-API Theme
+# Ravenous Middleman to AnchorCMS Theme
