@@ -1,0 +1,75 @@
+<div class="portfolio_total-container">
+
+  <input type="radio" id="design" name="portfolio-category" />
+    <label for="design">
+    <!---replace with category title--->
+      <h4>public works</h4>
+    </label>
+
+  <input type="radio" id="illustration" name="portfolio-category"/>
+  <label for="illustration">
+  <!---replace with category title.--->
+    <h4>illustration</h4>
+
+  </label>
+
+  <input type="radio" id="type-design" name="portfolio-category"/>
+  <label for="type-design">
+  <!---replace with category title.--->
+    <h4>type design</h4></label>
+
+<input type="radio" id="reset" name="portfolio-category"/>
+  <label for="reset"><h4>
+  all</h4></label>
+
+
+<!---
+  Begin PHP post loop info.
+--->
+
+  <!---
+    PHP link to post -- keep class for CSS
+  --->
+  <a href="article-public-works.html" class="proj__design">
+
+    <div class="portfolio_container">
+      <h1 class="portfolio--title">
+      <!---
+        PHP title of post
+      --->
+        project ether
+      </h1>  
+      <p class="portfolio-category">
+       <!---
+        PHP category of post
+      --->
+      public works
+    </p>
+    </div>
+  </a>
+
+  <a href="article-illustration.html" class="proj__illus">
+    <div class="portfolio_container">
+      <h1 class="portfolio--title">
+        monsters
+      </h1>
+      <p class="portfolio-category">
+        illustration
+      </p>
+    </div>
+  </a>
+
+  <a href="article-type.html" class="proj__type">
+    <div class="portfolio_container">
+      <h1 class="portfolio--title">
+        lettering
+      </h1>
+      <p class="portfolio-category">
+        type design
+      </p>
+    </div>
+  </a>
+<!---
+  End PHP post loop info.
+--->
+</div>

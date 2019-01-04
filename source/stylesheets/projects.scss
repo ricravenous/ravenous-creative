@@ -91,3 +91,26 @@
 
 
 }
+
+.project--navigation {
+  @include grid-column(12);
+
+}
+
+.button--previous {
+  @include grid-column(6);
+
+ @include grid-media($custom-neat-grid){
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.button--next {
+@include grid-column(6);
+text-align: right;
+@include grid-media($custom-neat-grid){
+    width: 100%;
+    text-align: center;
+  }
+}

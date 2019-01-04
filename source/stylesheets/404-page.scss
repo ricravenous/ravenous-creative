@@ -1,0 +1,9 @@
+.title--404-error {
+  @include grid-column(12);
+}
+
+.paragraph--404-error {
+  @include grid-column(10);
+  @include grid-push(2);
+  height: $height--base;
+}
